@@ -32,7 +32,7 @@ then
     echo "A new version of $DOCKER_IMAGE:$DOCKER_IMAGE_TAG is detected"
     echo "we will try to deploy it"
     echo "(1/2) - remove running image"
-    docker rmi -f $DOCKER_IMAGE
+    docker rm -f $DOCKER_CONTAINER_NAME
     echo "(2/2) - run the new image"
     if [ -f $env_file_path ]
     then
