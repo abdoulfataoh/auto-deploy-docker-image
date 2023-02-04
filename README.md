@@ -53,7 +53,7 @@ A quick bash script to deploy/run  always some latest docker container
 
 - and write this line at the end of file
 ```bash
-*/2 * * * * * path_to_script_folder/deploy.sh
+*/2 * * * * path_to_script_folder/deploy.sh
 
 ```
 
